@@ -1,0 +1,282 @@
+body{
+	padding: 0;
+	margin: 0;
+
+}
+
+
+.navbar{ background:#000000;}
+
+
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: #f4f4f4; color: #FFD700; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important; }
+
+
+.bg-dark{
+background-color:#343a40!important
+}
+.bg-primary{
+background-color:#007bff!important
+}
+
+.navbar-collapse{
+   justify-content: flex-end;
+  }
+
+  /*header style*/
+.header{
+ background-image: url('../images/work2.jpg');
+ position: relative;
+ background-size: cover;
+ background-position: center;
+
+}
+
+.header-3{
+position: center;
+padding-top: 3em;
+}
+
+.overlay{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(244, 244, 244, 0.7);
+}
+
+
+/*Description Style*/
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+    border:2px  solid #000;
+
+
+}
+
+.description h1{
+ color: white;
+ text-shadow: 4px 2px #000;
+
+
+
+}
+
+.description p{
+ color:black;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+
+.description button{
+ border:1px  solid #fff;
+ background:black;
+ color:#fff;
+}
+
+/*Portfolio - Style*/
+.portfolio{
+  padding: 1em;
+  position: relative;
+}
+
+.portfolio h4{
+  color:black;
+}
+
+.portfolio h2{
+ width: 100%;
+ text-align: center;
+ color: black;
+ border-bottom: 2px solid #000;
+ line-height: 0.1em;
+ margin: 10px 0 20px;
+ padding-top: 3%;
+
+}
+
+.portfolio h2 span{
+  background: #fff;
+  padding: 0 10px;
+}
+
+.header-2 {
+  background-color: white;
+}
+
+
+
+.text-content h6{
+  color: black;
+  text-align: center;
+  font-size: 90%;
+
+}
+
+
+/*About - Style*/
+
+.header-3 h2{
+  text-align: center;
+  width: 100%;
+  color: black;
+  border-bottom: 2px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  padding-top: 3%;
+
+  }
+
+.header-3 h2 span{
+background: #fff;
+padding: 0 10px;
+}
+
+}
+.about{
+ margin: 4em 0;
+ padding: 1em;
+ position: relative;
+}
+.about h2{
+ color:white;
+ margin: 2em;
+
+}
+.about .me img{
+ height: auto;
+ width: 100%;
+border-radius: 50%
+}
+.about span{
+ display: block;
+ color: #888;
+ position: absolute;
+   left: 115px;
+}
+.about .desc{
+ padding: 2em;
+ border-left:4px solid #000;
+}
+.about .desc h3{
+ color: #00b3db;
+}
+
+
+.about .desc p{
+ line-height:2;
+ color:#888;
+}
+
+/*Form Button - Style*/
+
+.btn_download {
+border-radius: 4px;
+ background-color: black;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 20px;
+ padding: 10px;
+ width: auto;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 5px;
+ text-align: center;
+}
+
+.btn_download span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.btn_download:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #00b3db;
+    border-color: #285e8e; /*set the color you want here*/
+}
+
+.btn2 {
+  color:white;
+  background-color: black;
+
+}
+
+/*Portfolio Pictures Gallery*/
+.single-content{
+  position: relative;
+  translation: .3s;
+  box-shadow: 10px 20px 20px rgba(0,0,0,0.8);
+
+}
+
+.single-content .text-content,
+.single-content:after{
+  position: absolute;
+  left: 20px;
+  right: 20px;
+}
+
+.single-content:after{
+  content: '';
+  display: block;
+  background: gray;
+  top: 20px;
+  bottom: 20px;
+  opacity: 0;
+  transform: rotate3d(-1,1,0,100deg);
+  transition: .4s;
+}
+
+.single-content:hover:after{
+  opacity: .9;
+  transform: rotate3d(0,0,0,0deg);
+}
+
+.single-content img{
+  width: 100%;
+  height: auto;
+}
+
+.text-content{
+  top: 45%;
+  opacity: 0;
+  z-index:1;
+  transform: translate(10%,-30%);
+  transition: .3s;
+  text-align: center;
+  color: #fff;
+}
+
+.text-content h4{
+  font-family: 'Big John', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+}
+
+.single-content:hover .text-content{
+  opacity:1;
+  transform: translate(0,-50%);
+  transition-delay: .3s;
+}
+
+.badges {
+  padding-top: 2%;
+  padding-bottom: 10%;
+}
